@@ -47,7 +47,7 @@ f = open(path+'/Info.plist','r+')
 content = f.read()
 if 'fbXXXXX' in content:
     print "*******************Append Action, skip custom script"
-    sys.exit("quite exeuction")
+    sys.exit("quit exeuction")
 
 print "*******************Replace Action, executing our script"
 f.seek(content.find('</dict>\n</plist>'))
